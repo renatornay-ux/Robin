@@ -1,0 +1,6 @@
+{
+  "name": "Nexo - Portal de Noticias Interconectadas",
+  "description": "Portal periodístico de noticias con redacción editorial, red de relaciones y grafo interactivo de conexiones entre informaciones, entidades e hilos de cobertura.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

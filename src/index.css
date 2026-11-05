@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Source Serif 4", Georgia, serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #faf9f6;
+  color: #1c1917;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom editorial styling */
+.editorial-headline {
+  font-family: var(--font-serif);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.editorial-body {
+  font-family: var(--font-body);
+  line-height: 1.8;
+}
+
+.editorial-dropcap::first-letter {
+  font-family: var(--font-serif);
+  font-size: 3.75rem;
+  line-height: 0.85;
+  float: left;
+  margin-right: 0.65rem;
+  margin-top: 0.15rem;
+  font-weight: 700;
+  color: #1c1917;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 113, 108, 0.25);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 113, 108, 0.45);
+}
